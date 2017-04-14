@@ -19,17 +19,18 @@ public class test {
 //            "create timeseries root.excavator.Shanghai.d3.s2 with datatype=FLOAT,encoding=RLE",
 //            "set storage group to root.excavator.Beijing.d1",
 //            "delete from root.excavator.Beijing.d1.s1 where time < 1479247862729",
-            "set storage group to root.excavator.Beijing.rasp",
-            "insert into root.excavator.Beijing.rasp.mem values(1479247862727, 1)",
-            "insert into root.excavator.Beijing.rasp.mem values(1479247862728, 2)",
-            "insert into root.excavator.Beijing.rasp.mem values(1479247862729, 3)",
+//            "create timeseries root.test1.ras.mem with datatype=FLOAT, encoding=RLE",
+            "set storage group to root.test1.ras",
+            "insert into root.test1.ras.mem values(2, 1)",
+            "insert into root.test1.ras.mem values(6, 2)",
+            "insert into root.test1.ras.mem values(8, 3)",
 
 
     };
 
     public static String exeHist[] = {
             "create timeseries root.excavator.Beijing.rasp.mem with datatype = FLOAT , encoding = RLE",
-            "select s1 from root.excavator.Beijing.d1"
+            "select mem from root.test1.ras"
     };
 
     public static void main(String[] args)throws Exception {
@@ -57,7 +58,7 @@ public class test {
 
                 while (res.next()){
 
-                    System.out.println(res.getString("rasp"));
+                    System.out.println(res.getString(0));
                     //System.out.println(res.getString("Timestamp") + '|' + res.getString("s1"));
                 }
             }
