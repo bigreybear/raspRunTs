@@ -52,10 +52,10 @@ public class rasRun {
                 float mem_per = (float)memWatchDog();
                 exeStat = "multinsert into root.test1.ras (time, tid, mem) value(" + System.currentTimeMillis() + "," +
                         System.currentTimeMillis() + "," + mem_per + ")" ;
-                if(args[0]=="ro") {
+                if(args[0].equals("ro")) {
                     System.out.println(exeStat);
                 }
-                else if(args[0]=="wo") {
+                else if(args[0].equals("wo")) {
                     statement.execute(exeStat);
                 }
                 else

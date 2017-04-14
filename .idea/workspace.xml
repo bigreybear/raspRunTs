@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26f5c3f6-2854-46be-a2af-65c79c666aeb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rasRun.java" afterPath="$PROJECT_DIR$/src/rasRun.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,12 +35,12 @@
       <file leaf-file-name="rasRun.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/rasRun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+            <state relative-caret-position="459">
+              <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1492175501717" expanded="true" signature="1054:1099" ph="select mem f... ras" />
-                <marker date="1492175501717" expanded="true" signature="1115:1155" ph="update root.... " />
+                <marker date="1492175607521" expanded="true" signature="1054:1099" ph="select mem f... ras" />
+                <marker date="1492175607521" expanded="true" signature="1115:1155" ph="update root.... " />
               </folding>
             </state>
           </provider>
@@ -636,12 +635,12 @@
       <workItem from="1492139327054" duration="12594000" />
       <workItem from="1492173114968" duration="5000" />
       <workItem from="1492173144782" duration="1909000" />
-      <workItem from="1492175398220" duration="112000" />
+      <workItem from="1492175398220" duration="210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14620000" />
+    <option name="totallyTimeSpent" value="14718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -711,8 +710,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1492175501717" expanded="true" signature="1054:1099" ph="select mem f... ras" />
-            <marker date="1492175501717" expanded="true" signature="1115:1155" ph="update root.... " />
+            <marker date="1492175607521" expanded="true" signature="1054:1099" ph="select mem f... ras" />
+            <marker date="1492175607521" expanded="true" signature="1115:1155" ph="update root.... " />
           </folding>
         </state>
       </provider>
@@ -767,8 +766,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1492175501717" expanded="true" signature="1054:1099" ph="select mem f... ras" />
-            <marker date="1492175501717" expanded="true" signature="1115:1155" ph="update root.... " />
+            <marker date="1492175607521" expanded="true" signature="1054:1099" ph="select mem f... ras" />
+            <marker date="1492175607521" expanded="true" signature="1115:1155" ph="update root.... " />
           </folding>
         </state>
       </provider>
@@ -823,8 +822,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1492175501717" expanded="true" signature="1054:1099" ph="select mem f... ras" />
-            <marker date="1492175501717" expanded="true" signature="1115:1155" ph="update root.... " />
+            <marker date="1492175607521" expanded="true" signature="1054:1099" ph="select mem f... ras" />
+            <marker date="1492175607521" expanded="true" signature="1115:1155" ph="update root.... " />
           </folding>
         </state>
       </provider>
@@ -915,12 +914,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rasRun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="62" column="40" lean-forward="false" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+        <state relative-caret-position="459">
+          <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1492175501717" expanded="true" signature="1054:1099" ph="select mem f... ras" />
-            <marker date="1492175501717" expanded="true" signature="1115:1155" ph="update root.... " />
+            <marker date="1492175607521" expanded="true" signature="1054:1099" ph="select mem f... ras" />
+            <marker date="1492175607521" expanded="true" signature="1115:1155" ph="update root.... " />
           </folding>
         </state>
       </provider>
