@@ -70,10 +70,12 @@ public class rasRun {
                     for (String exee : exeReCreate){
                         statement.execute(exee);
                     }
+                    break;
                 }
                 else
                 {
                     System.out.println("nothing to do");
+                    break;
                 }
             }
 
