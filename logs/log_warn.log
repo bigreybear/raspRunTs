@@ -1,0 +1,20 @@
+WARN  [2017-04-14 12:04:26,093] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:06:42,141] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:19:13,557] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:19:33,759] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:24:00,904] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:24:21,507] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:27:22,395] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:29:49,244] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:30:25,043] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:31:40,170] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:33:37,571] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:34:12,652] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column s1 does not exist 
+WARN  [2017-04-14 12:34:22,091] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column d1.s1 does not exist 
+WARN  [2017-04-14 12:39:18,568] com.corp.tsfile.jdbc.TsfileQueryResultSet:1102 - tsfile-jdbc TsfileResultSet: no record remain 
+WARN  [2017-04-14 12:39:26,344] com.corp.tsfile.jdbc.TsfileQueryResultSet:1102 - tsfile-jdbc TsfileResultSet: no record remain 
+WARN  [2017-04-14 12:39:31,011] com.corp.tsfile.jdbc.TsfileQueryResultSet:1102 - tsfile-jdbc TsfileResultSet: no record remain 
+WARN  [2017-04-14 12:39:49,481] com.corp.tsfile.jdbc.TsfileQueryResultSet:1102 - tsfile-jdbc TsfileResultSet: no record remain 
+WARN  [2017-04-14 12:39:55,964] com.corp.tsfile.jdbc.TsfileQueryResultSet:1102 - tsfile-jdbc TsfileResultSet: no record remain 
+WARN  [2017-04-14 12:40:11,274] com.corp.tsfile.jdbc.TsfileQueryResultSet:1102 - tsfile-jdbc TsfileResultSet: no record remain 
+WARN  [2017-04-14 12:45:05,358] com.corp.tsfile.jdbc.TsfileQueryResultSet:156 - tsfile-jdbc TsfileResultSet: column rasp does not exist 
