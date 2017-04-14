@@ -78,17 +78,12 @@ public class rasRun {
             }
 
 
-
-
-            statement.execute(exeHist[exeHist.length - 1]);
-
-            ResultSet res = statement.getResultSet();
-
-            while (res.next()){
-
-                System.out.println(res.getString("Timestamp"));
-                //System.out.println(res.getString("Timestamp") + '|' + res.getString("s1"));
-            }
+//            statement.execute(exeHist[exeHist.length - 1]);
+//            ResultSet res = statement.getResultSet();
+//            while (res.next()){
+//                System.out.println(res.getString("Timestamp"));
+//                //System.out.println(res.getString("Timestamp") + '|' + res.getString("s1"));
+//            }
 
 
         } catch (Exception e) {
