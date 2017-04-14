@@ -65,7 +65,9 @@ public class rasRun {
                     System.out.println(exeStat);
                 }
                 else if(args[0].equals("wo")) {
-                    System.out.println(i);
+                    System.out.print(i);
+                    System.out.print(" ");
+                    System.out.println(System.currentTimeMillis()%1000000000);
                     statement.execute(exeStat);
                 }
                 else if(args[0].equals("delre")){
