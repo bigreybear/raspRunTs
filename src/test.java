@@ -30,7 +30,7 @@ public class test {
 
     public static String exeHist[] = {
             "create timeseries root.excavator.Beijing.rasp.mem with datatype = FLOAT , encoding = RLE",
-            "select mem from root.test1.ras"
+            "select mem from root.test1.ras where time >= 2"
     };
 
     public static void main(String[] args)throws Exception {
@@ -46,7 +46,6 @@ public class test {
                 statement.execute(exes);
                 System.out.println(exes);
             }
-            ;
             if(!ifQuery) {
                 statement.execute(exeHist[exeHist.length - 1]);
             }

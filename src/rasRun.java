@@ -20,7 +20,7 @@ public class rasRun {
         long freePhysicalMemorySize = osmxb.getFreePhysicalMemorySize();
 
         //System.out.println(freePhysicalMemorySize);
-        Double compare =  (1 - freePhysicalMemorySize * 1.0 / totalPhysicMemSize) * 100;
+        double compare =  (1 - freePhysicalMemorySize * 1.0 / totalPhysicMemSize) * 100;
 
         // String str = compare.intValue() + "%";
         // System.out.println(compare);
@@ -29,7 +29,8 @@ public class rasRun {
 
     public static String exeHist[] = {
             "create timeseries root.excavator.Beijing.rasp.mem with datatype = FLOAT , encoding = RLE",
-            "select mem from root.test1.ras"
+            "select mem from root.test1.ras where time < 5",
+            "update root.test1.ras.mem set value = 99 "
     };
 
     public static void main(String[] args)throws Exception {
@@ -40,8 +41,23 @@ public class rasRun {
         Statement statement = null;
         try {
             Class.forName("com.corp.tsfile.jdbc.TsfileDriver");
-            connection = DriverManager.getConnection(localHost, "root", "root");
+            connection = DriverManager.getConnection(raspHost, "root", "root");
             statement = connection.createStatement();
+
+            String exeStat = "";
+            int i = 0;
+            while (i<=36000){
+                System.out.println(args[0]);
+                Thread.sleep(500);
+                float mem_per = (float)memWatchDog();
+                exeStat = "multinsert into root.test1.ras (time, tid, mem) value(" + System.currentTimeMillis() + "," +
+                        System.currentTimeMillis() + "," + mem_per + ")" ;
+                //System.out.println(exeStat);
+                //statement.execute(exeStat);
+            }
+
+
+
 
             statement.execute(exeHist[exeHist.length - 1]);
 
@@ -49,7 +65,7 @@ public class rasRun {
 
             while (res.next()){
 
-                System.out.println(res.getString(0));
+                System.out.println(res.getString("Timestamp"));
                 //System.out.println(res.getString("Timestamp") + '|' + res.getString("s1"));
             }
 
