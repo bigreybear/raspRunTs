@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="26f5c3f6-2854-46be-a2af-65c79c666aeb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log_warn.log" afterPath="$PROJECT_DIR$/logs/log_warn.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rasRun.java" afterPath="$PROJECT_DIR$/src/rasRun.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/watchRun.java" afterPath="$PROJECT_DIR$/src/watchRun.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rasRun.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rasRun.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rasRun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="61" column="99" lean-forward="false" selection-start-line="61" selection-start-column="99" selection-end-line="61" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3186#3247#0" expanded="false" />
@@ -72,16 +71,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="watchRun.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="watchRun.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/watchRun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+            <state relative-caret-position="495">
+              <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1492182320830" expanded="true" signature="1585:1647" ph="select mem f... ras" />
-                <marker date="1492182320830" expanded="true" signature="1585:1657" ph="select mem, ras" />
-                <marker date="1492182320830" expanded="true" signature="2475:2533" ph="select mem f... ras" />
+                <marker date="1492183271575" expanded="true" signature="1612:1674" ph="select mem f... ras" />
+                <marker date="1492183271575" expanded="true" signature="1612:1684" ph="select mem, ras" />
+                <marker date="1492183271575" expanded="true" signature="2474:2532" ph="select mem f... ras" />
               </folding>
             </state>
           </provider>
@@ -168,8 +167,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test.java" />
-        <option value="$PROJECT_DIR$/src/watchRun.java" />
         <option value="$PROJECT_DIR$/src/rasRun.java" />
+        <option value="$PROJECT_DIR$/src/watchRun.java" />
       </list>
     </option>
   </component>
@@ -704,12 +703,12 @@
       <workItem from="1492139327054" duration="12594000" />
       <workItem from="1492173114968" duration="5000" />
       <workItem from="1492173144782" duration="1909000" />
-      <workItem from="1492175398220" duration="6988000" />
+      <workItem from="1492175398220" duration="8041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21496000" />
+    <option name="totallyTimeSpent" value="22549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -724,7 +723,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15618221" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -803,9 +802,9 @@
           <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1492182320830" expanded="true" signature="1585:1647" ph="select mem f... ras" />
-            <marker date="1492182320830" expanded="true" signature="1585:1657" ph="select mem, ras" />
-            <marker date="1492182320830" expanded="true" signature="2475:2533" ph="select mem f... ras" />
+            <marker date="1492183271575" expanded="true" signature="1612:1674" ph="select mem f... ras" />
+            <marker date="1492183271575" expanded="true" signature="1612:1684" ph="select mem, ras" />
+            <marker date="1492183271575" expanded="true" signature="2474:2532" ph="select mem f... ras" />
           </folding>
         </state>
       </provider>
@@ -908,9 +907,9 @@
           <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1492182320830" expanded="true" signature="1585:1647" ph="select mem f... ras" />
-            <marker date="1492182320830" expanded="true" signature="1585:1657" ph="select mem, ras" />
-            <marker date="1492182320830" expanded="true" signature="2475:2533" ph="select mem f... ras" />
+            <marker date="1492183271575" expanded="true" signature="1612:1674" ph="select mem f... ras" />
+            <marker date="1492183271575" expanded="true" signature="1612:1684" ph="select mem, ras" />
+            <marker date="1492183271575" expanded="true" signature="2474:2532" ph="select mem f... ras" />
           </folding>
         </state>
       </provider>
@@ -1013,9 +1012,9 @@
           <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1492182320830" expanded="true" signature="1585:1647" ph="select mem f... ras" />
-            <marker date="1492182320830" expanded="true" signature="1585:1657" ph="select mem, ras" />
-            <marker date="1492182320830" expanded="true" signature="2475:2533" ph="select mem f... ras" />
+            <marker date="1492183271575" expanded="true" signature="1612:1674" ph="select mem f... ras" />
+            <marker date="1492183271575" expanded="true" signature="1612:1684" ph="select mem, ras" />
+            <marker date="1492183271575" expanded="true" signature="2474:2532" ph="select mem f... ras" />
           </folding>
         </state>
       </provider>
@@ -1163,28 +1162,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/watchRun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1492182320830" expanded="true" signature="1585:1647" ph="select mem f... ras" />
-            <marker date="1492182320830" expanded="true" signature="1585:1657" ph="select mem, ras" />
-            <marker date="1492182320830" expanded="true" signature="2475:2533" ph="select mem f... ras" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rasRun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+        <state relative-caret-position="204">
+          <caret line="61" column="99" lean-forward="false" selection-start-line="61" selection-start-column="99" selection-end-line="61" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3186#3247#0" expanded="false" />
             <marker date="1492182463813" expanded="true" signature="1054:1099" ph="select mem f... ras" />
             <marker date="1492182463813" expanded="true" signature="1115:1155" ph="update root.... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/watchRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="79" column="44" lean-forward="true" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1492183271575" expanded="true" signature="1612:1674" ph="select mem f... ras" />
+            <marker date="1492183271575" expanded="true" signature="1612:1684" ph="select mem, ras" />
+            <marker date="1492183271575" expanded="true" signature="2474:2532" ph="select mem f... ras" />
           </folding>
         </state>
       </provider>

@@ -21,6 +21,7 @@ public class watchRun {
         BufferedReader wt = new BufferedReader(new InputStreamReader(System.in));
         // long n_tid = 0;
         long tid_base = new Long(0);
+        int rep_count = 0;
         try {
             Class.forName("com.corp.tsfile.jdbc.TsfileDriver");
             connection = DriverManager.getConnection(raspHost, "root", "root");
@@ -53,22 +54,35 @@ public class watchRun {
                         while (rs.next()){
                             if (tid_base < new Long(rs.getString("root.test1.ras.tid")))
                             {
-                                System.out.println("tid:");
-                                System.out.println(rs.getString("root.test1.ras.tid"));
                                 tid_base = new Long(rs.getString("root.test1.ras.tid"));
                             }
                         }
+                        System.out.println("final base tid:");
+                        System.out.println(tid_base);
                     }
                 }
                 else {
                     //n_tid = System.currentTimeMillis() % 1000000000;
-                    System.out.println(tid_base);
+                    // System.out.println(tid_base);
                     exeStat = "select mem from root.test1.ras where root.test1.ras.tid >=" + (tid_base - 1001);
                     hasRes = statement.execute(exeStat);
                     if (hasRes) {
                         rs = statement.getResultSet();
-                        System.out.println(rs.getString("root.test1.ras.mem"));
+                        rep_count = 0;
+                        while(rs.next()){
+                            System.out.println(rs.getString("root.test1.ras.mem"));
+                            rep_count ++ ;
+                        }
+                        if (rep_count>1){
+                            if (rep_count>2){
+                                tid_base += 1000*(rep_count-2);
+                            }
+                            tid_base += 500;
+                        }
+                        System.out.println("--------------------------------------------------------");
                     }
+                    Thread.sleep(1009);
+                    tid_base += 1000;
                 }
 
 
