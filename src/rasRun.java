@@ -55,8 +55,9 @@ public class rasRun {
             String exeStat = "";
             int i = 0;
             while (i<=36000){
+                i ++;
 
-                Thread.sleep(500);
+                Thread.sleep(1000);
                 float mem_per = (float)memWatchDog();
                 exeStat = "multinsert into root.test1.ras (time, tid, mem) values (" + System.currentTimeMillis() + "," +
                         System.currentTimeMillis()%1000000000 + "," + mem_per + ")" ;
@@ -64,6 +65,7 @@ public class rasRun {
                     System.out.println(exeStat);
                 }
                 else if(args[0].equals("wo")) {
+                    System.out.println(i);
                     statement.execute(exeStat);
                 }
                 else if(args[0].equals("delre")){
