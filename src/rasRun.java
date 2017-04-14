@@ -33,6 +33,14 @@ public class rasRun {
             "update root.test1.ras.mem set value = 99 "
     };
 
+    public static String exeReCreate[] = {
+            "delete timeseries root.test1.ras.mem",
+            "delete timeseries root.test1.tas.tid",
+            "create timeseries root.test1.ras.mem with datatype=FLOAT, encoding=RLE",
+            "create timeseries root.test1.ras.tid with datatype=INT32, encoding=RLE",
+            "set storage group to root.test1.tas"
+    };
+
     public static void main(String[] args)throws Exception {
         String localHost = "jdbc:tsfile://127.0.0.1:6667";
         String raspHost = "jdbc:tsfile://192.168.130.128:6667/";
@@ -57,6 +65,11 @@ public class rasRun {
                 }
                 else if(args[0].equals("wo")) {
                     statement.execute(exeStat);
+                }
+                else if(args[0].equals("delre")){
+                    for (String exee : exeReCreate){
+                        statement.execute(exee);
+                    }
                 }
                 else
                 {
