@@ -35,10 +35,10 @@ public class rasRun {
 
     public static String exeReCreate[] = {
             "delete timeseries root.test1.ras.mem",
-            "delete timeseries root.test1.tas.tid",
+            "delete timeseries root.test1.ras.tid",
             "create timeseries root.test1.ras.mem with datatype=FLOAT, encoding=RLE",
             "create timeseries root.test1.ras.tid with datatype=INT32, encoding=RLE",
-            "set storage group to root.test1.tas"
+            "set storage group to root.test1.ras"
     };
 
     public static void main(String[] args)throws Exception {
