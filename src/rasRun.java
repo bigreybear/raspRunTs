@@ -37,7 +37,7 @@ public class rasRun {
             "delete timeseries root.test1.ras.mem",
             "delete timeseries root.test1.ras.tid",
             "create timeseries root.test1.ras.mem with datatype=FLOAT, encoding=RLE",
-            "create timeseries root.test1.ras.tid with datatype=INT32, encoding=RLE",
+            "create timeseries root.test1.ras.tid with datatype=INT64, encoding=RLE",
             "set storage group to root.test1.ras"
     };
 
@@ -59,7 +59,7 @@ public class rasRun {
                 Thread.sleep(500);
                 float mem_per = (float)memWatchDog();
                 exeStat = "multinsert into root.test1.ras (time, tid, mem) values (" + System.currentTimeMillis() + "," +
-                        System.currentTimeMillis() + "," + mem_per + ")" ;
+                        System.currentTimeMillis()%1000000000 + "," + mem_per + ")" ;
                 if(args[0].equals("ro")) {
                     System.out.println(exeStat);
                 }
