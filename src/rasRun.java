@@ -49,12 +49,13 @@ public class rasRun {
     public static void main(String[] args)throws Exception {
         String localHost = "jdbc:tsfile://127.0.0.1:6667";
         String raspHost = "jdbc:tsfile://192.168.130.128:6667/";
+        String rraspip = "jdbc:tsfile://" + args[1] + ":6667/";
 
         Connection connection = null;
         Statement statement = null;
         try {
             Class.forName("com.corp.tsfile.jdbc.TsfileDriver");
-            connection = DriverManager.getConnection(raspHost, "root", "root");
+            connection = DriverManager.getConnection(rraspip, "root", "root");
             statement = connection.createStatement();
 
             String exeStat = "";
