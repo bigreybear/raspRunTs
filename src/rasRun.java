@@ -35,11 +35,16 @@ public class rasRun {
 
     public static String exeReCreate[] = {
             "delete timeseries root.test1.ras.mem",
-            "delete timeseries root.test1.ras.tid",
+//            "delete timeseries root.test1.ras.tid",
             "create timeseries root.test1.ras.mem with datatype=FLOAT, encoding=RLE",
-            "create timeseries root.test1.ras.tid with datatype=INT64, encoding=RLE",
+//            "create timeseries root.test1.ras.tid with datatype=INT64, encoding=RLE",
             "set storage group to root.test1.ras"
     };
+
+    public static String exeCreate[] = {
+            "create timeseries root.test1.ras.mem with datatype=FLOAT, encoding=RLE",
+            "set storage group to root.test1.ras"
+    }
 
     public static void main(String[] args)throws Exception {
         String localHost = "jdbc:tsfile://127.0.0.1:6667";
@@ -59,15 +64,19 @@ public class rasRun {
 
                 Thread.sleep(1000);
                 float mem_per = (float)memWatchDog();
-                exeStat = "multinsert into root.test1.ras (time, tid, mem) values (" + System.currentTimeMillis() + "," +
-                        System.currentTimeMillis()%1000000000 + "," + mem_per + ")" ;
+                exeStat = "insert into root.test1.ras.mem values (" + System.currentTimeMillis() + "," + mem_per + ")" ;
                 if(args[0].equals("ro")) {
                     System.out.println(exeStat);
+                }
+                else if(args[0].equals("cre")){
+
                 }
                 else if(args[0].equals("wo")) {
                     System.out.print(i);
                     System.out.print(" ");
-                    System.out.println(System.currentTimeMillis()%1000000000);
+                    System.out.println(System.currentTimeMillis());
+                    System.out.print(" ");
+                    System.out.println(mem_per);
                     statement.execute(exeStat);
                 }
                 else if(args[0].equals("delre")){

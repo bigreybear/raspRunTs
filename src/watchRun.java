@@ -45,10 +45,12 @@ public class watchRun {
                     }
                 }
 
-                if (tid_base==0){
-                    // first time to enter
-                    exeStat = "select mem, tid from root.test1.ras where root.test1.ras.tid > 180787111";
-                    hasRes = statement.execute(exeStat);
+                if (tid_base==0 ){
+                    // first time to
+                    if (tid_base == 0) {
+                        exeStat = "select mem, tid from root.test1.ras where root.test1.ras.tid > 180787111";
+                        hasRes = statement.execute(exeStat);
+                    }
                     if (hasRes){
                         rs = statement.getResultSet();
                         while (rs.next()){
@@ -57,14 +59,16 @@ public class watchRun {
                                 tid_base = new Long(rs.getString("root.test1.ras.tid"));
                             }
                         }
-                        System.out.println("final base tid:");
+                        if (tid_base ==0) {
+                            System.out.println("final initial base tid:");
+                        }
                         System.out.println(tid_base);
                     }
                 }
                 else {
                     //n_tid = System.currentTimeMillis() % 1000000000;
                     // System.out.println(tid_base);
-                    exeStat = "select mem from root.test1.ras where root.test1.ras.tid >=" + (tid_base - 1001);
+                    exeStat = "select mem from root.test1.ras where root.test1.ras.tid >" + tid_base;
                     hasRes = statement.execute(exeStat);
                     if (hasRes) {
                         rs = statement.getResultSet();
