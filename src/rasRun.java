@@ -74,7 +74,7 @@ public class rasRun {
                 else if(args[0].equals("wo")) {
                     System.out.print(i);
                     System.out.print(" ");
-                    System.out.println(System.currentTimeMillis());
+                    System.out.print(System.currentTimeMillis());
                     System.out.print(" ");
                     System.out.println(mem_per);
                     statement.execute(exeStat);

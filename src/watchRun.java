@@ -45,30 +45,31 @@ public class watchRun {
                     }
                 }
 
-                if (tid_base==0 ){
+                if (tid_base==0){
                     // first time to
                     if (tid_base == 0) {
-                        exeStat = "select mem, tid from root.test1.ras where root.test1.ras.tid > 180787111";
+                        exeStat = "select mem, tid from root.test1.ras where time > 1492227389774";
                         hasRes = statement.execute(exeStat);
                     }
                     if (hasRes){
                         rs = statement.getResultSet();
                         while (rs.next()){
-                            if (tid_base < new Long(rs.getString("root.test1.ras.tid")))
+                            if (tid_base < new Long(rs.getString("Timestamp")))
                             {
-                                tid_base = new Long(rs.getString("root.test1.ras.tid"));
+                                tid_base = new Long(rs.getString("Timestamp"));
                             }
                         }
                         if (tid_base ==0) {
                             System.out.println("final initial base tid:");
+                            System.out.println(tid_base);
                         }
-                        System.out.println(tid_base);
+
                     }
                 }
-                else {
+                if(tid_base!=0) {
                     //n_tid = System.currentTimeMillis() % 1000000000;
                     // System.out.println(tid_base);
-                    exeStat = "select mem from root.test1.ras where root.test1.ras.tid >" + tid_base;
+                    exeStat = "select mem from root.test1.ras where time >" + tid_base;
                     hasRes = statement.execute(exeStat);
                     if (hasRes) {
                         rs = statement.getResultSet();
@@ -85,7 +86,7 @@ public class watchRun {
                         }
                         System.out.println("--------------------------------------------------------");
                     }
-                    Thread.sleep(1009);
+                    Thread.sleep(1005);
                     tid_base += 1000;
                 }
 
