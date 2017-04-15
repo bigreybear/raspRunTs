@@ -44,7 +44,7 @@ public class rasRun {
     public static String exeCreate[] = {
             "create timeseries root.test1.ras.mem with datatype=FLOAT, encoding=RLE",
             "set storage group to root.test1.ras"
-    }
+    };
 
     public static void main(String[] args)throws Exception {
         String localHost = "jdbc:tsfile://127.0.0.1:6667";
