@@ -3,7 +3,6 @@
     <output-path>$PROJECT_DIR$/out/artifacts/TsOnRasp_jar</output-path>
     <root id="archive" name="untitled.jar">
       <element id="module-output" name="untitled" />
-      <element id="extracted-dir" path="D:/delta/tsfile-jdbc-alpha.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

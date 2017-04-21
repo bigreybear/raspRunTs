@@ -10,11 +10,11 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://D:/delta/tsfile-jdbc-alpha.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/tsfile-jdbc-alpha.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="jar://D:/delta/tsfile-jdbc-alpha.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/tsfile-jdbc-alpha.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
