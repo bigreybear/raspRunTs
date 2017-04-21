@@ -7,6 +7,20 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.ValueAxis;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.data.time.Millisecond;
+import org.jfree.data.time.TimeSeries;
+import org.jfree.data.time.TimeSeriesCollection;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+
 /**
  * Created by BD-Loen on 2017/4/14.
  */
@@ -21,8 +35,12 @@ public class watchRun {
         BufferedReader wt = new BufferedReader(new InputStreamReader(System.in));
         // long n_tid = 0;
         long tid_base = new Long(0);
+        float res_get = 50.0f;
         int rep_count = 0;
+
         try {
+            RealTimeChart rtc = drawPoints.createCharter();
+
             Class.forName("com.corp.tsfile.jdbc.TsfileDriver");
             connection = DriverManager.getConnection(raspHost, "root", "root");
             statement = connection.createStatement();
@@ -77,7 +95,9 @@ public class watchRun {
                         while(rs.next()){
                             System.out.println(rs.getString("root.test1.ras.mem"));
                             rep_count ++ ;
+                            res_get =Float.parseFloat(rs.getString("root.test1.ras.mem"));
                         }
+                        rtc.addDataPoint(res_get);
                         if (rep_count>1){
                             if (rep_count>2){
                                 tid_base += 1000*(rep_count-2);

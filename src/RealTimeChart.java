@@ -24,7 +24,7 @@ public class RealTimeChart extends ChartPanel implements Runnable
         //创建时序图对象
         timeSeries = new TimeSeries(chartContent,Millisecond.class);
         TimeSeriesCollection timeseriescollection = new TimeSeriesCollection(timeSeries);
-        JFreeChart jfreechart = ChartFactory.createTimeSeriesChart(title,"时间(秒)",yaxisName,timeseriescollection,true,true,false);
+        JFreeChart jfreechart = ChartFactory.createTimeSeriesChart(title,"Time",yaxisName,timeseriescollection,true,true,false);
         XYPlot xyplot = jfreechart.getXYPlot();
         //纵坐标设定
         ValueAxis valueaxis = xyplot.getDomainAxis();
@@ -39,17 +39,14 @@ public class RealTimeChart extends ChartPanel implements Runnable
         return jfreechart;
     }
 
+    public void addDataPoint(float value){
+        timeSeries.add(new Millisecond(), value);
+    }
+
+
     public void run()
     {
-        while(true)
-        {
-            try
-            {
-                timeSeries.add(new Millisecond(), randomNum());
-                Thread.sleep(300);
-            }
-            catch (InterruptedException e)  {   }
-        }
+
     }
 
     private long randomNum()
